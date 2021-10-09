@@ -1,11 +1,10 @@
-@extends('layouts.app')
+@extends('layouts.app',['title' => 'Home'])
 
-@section('title','home')
 @section('content')
 
     <div class="container">
         home
-        
+
     </div>
 
 @endsection

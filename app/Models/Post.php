@@ -10,5 +10,9 @@ class Post extends Model
     use HasFactory;
     protected $table = 'posts';
 
-   
+   protected $fillable = ['title','slug','body'];
+
+   public function scopeLatestPost(){
+        return $this->latest()->first();
+   }
 }

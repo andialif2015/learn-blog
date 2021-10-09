@@ -4,10 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>@yield('title')</title>
+    <title>{{ $title ?? 'Parsinta' }}</title>
+    {{-- <title>Parsinta</title> --}}
     <link rel="stylesheet" href="{{ asset('css/bootstrap.css') }}">
 </head>
 <body>
+
     @include('layouts.navigation')
     <div class="py-4">
         @yield('content')
